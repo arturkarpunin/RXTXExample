@@ -17,7 +17,9 @@ public class NewMain {
      */
     public static void main(String[] args) {
         try {
+            System.out.println("debug 1");
             (new TwoWaySerialComm()).connect("/dev/ttyACM0");
+            System.out.println("debug 2");
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
